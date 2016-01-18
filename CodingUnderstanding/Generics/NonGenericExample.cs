@@ -3,22 +3,26 @@ using System.Text;
 
 namespace CodingUnderstanding.Generics
 {
-    class ObjectIntInt {
+    class ObjectIntInt
+    {
 
         int A { get; set; }
         int B { get; set; }
 
         public ObjectIntInt(int a, int b) { A = a; B = b; }
 
-        public string DisplayValues() {
+        public string DisplayValues()
+        {
+
+            string carriageReturnLineFeed = "\n\r";
 
             StringBuilder sb = new StringBuilder();
 
-            sb.Append(this.GetType()).Append("\n\r")
+            sb.Append(this.GetType()).Append(carriageReturnLineFeed)
               .Append("Value A = ")
-              .Append(A.ToString()).Append("\n\r")
+              .Append(A.ToString()).Append(carriageReturnLineFeed)
               .Append("Value B = ")
-              .Append(B.ToString()).Append("\n\r");
+              .Append(B.ToString()).Append(carriageReturnLineFeed);
 
             return sb.ToString();
         }
@@ -60,7 +64,7 @@ namespace CodingUnderstanding.Generics
 
             sb.Append(this.GetType()).Append("\n\r")
               .Append("Value A = ")
-              .Append(A.ToString()).Append("\n\r")
+              .Append(A).Append("\n\r")
               .Append("Value B = ")
               .Append(B.ToString()).Append("\n\r");
 
@@ -70,15 +74,16 @@ namespace CodingUnderstanding.Generics
 
     class NonGenericExample
     {
-        public NonGenericExample() {
+        public NonGenericExample()
+        {
 
             ObjectIntInt intInt = new ObjectIntInt(1, 2);
             ObjectIntString intString = new ObjectIntString(1, "Banana");
-            ObjectStringFloat StringFloat = new ObjectStringFloat("Apples", 5.0f);
+            ObjectStringFloat stringFloat = new ObjectStringFloat("Apples", 5.0f);
 
             Console.WriteLine(intInt.DisplayValues());
             Console.WriteLine(intString.DisplayValues());
-            Console.WriteLine(StringFloat.DisplayValues());
+            Console.WriteLine(stringFloat.DisplayValues());
         }
     }
 }

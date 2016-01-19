@@ -8,28 +8,29 @@ namespace CodingUnderstanding.Generics.Test
         public void test_GenericIntInt()
         {
 
-            ObjectGeneric<int, int> genericIntInt = new ObjectGeneric<int, int>(1, 2);
-            ObjectIntInt intInt = new ObjectIntInt(1, 2);
+            var genericIntInt = new ObjectGeneric<int, int>(1, 2);
+            var intInt = new ObjectIntInt(1, 2);
 
-            Assert.AreEqual(genericIntInt.DisplayValues(), intInt.DisplayValues());
+
+            Assert.AreEqual(genericIntInt.DisplayPropertyValues(), intInt.DisplayPropertyValues());
         }
 
         [Test]
         public void test_GenericIntString()
         {
-            ObjectGeneric<int, string> genericintString = new ObjectGeneric<int, string>(1, "Banana");
-            ObjectIntString intInt = new ObjectIntString(1, "Banana");
+            var genericintString = new ObjectGeneric<int, string>(1, "Banana");
+            var intString = new ObjectIntString(1, "Banana");
 
-            Assert.AreEqual(genericintString.DisplayValues(), intInt.DisplayValues());
+            Assert.AreEqual(genericintString.DisplayPropertyValues(), intString.DisplayPropertyValues());
         }
 
         [Test]
         public void test_GenericStringFloat()
         {
-            ObjectGeneric<string, float> genericStringFloat = new ObjectGeneric<string, float>("Apples", 5.0f);
-            ObjectStringFloat intInt = new ObjectStringFloat("Apples", 5.0f);
+            var genericStringFloat = new ObjectGeneric<string, float>("Apples", 5.0f);
+            var stringFloat = new ObjectStringFloat("Apples", 5.0f);
 
-            Assert.AreEqual(genericStringFloat.DisplayValues(), intInt.DisplayValues());
+            Assert.AreEqual(genericStringFloat.DisplayPropertyValues(), stringFloat.DisplayPropertyValues());
         }
     }
 }

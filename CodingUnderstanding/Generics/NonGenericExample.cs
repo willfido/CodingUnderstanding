@@ -26,6 +26,21 @@ namespace CodingUnderstanding.Generics
 
             return sb.ToString();
         }
+
+        public string DisplayPropertyValues()
+        {
+
+            string carriageReturnLineFeed = "\n\r";
+
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append("Value A = ")
+              .Append(A.ToString()).Append(carriageReturnLineFeed)
+              .Append("Value B = ")
+              .Append(B.ToString()).Append(carriageReturnLineFeed);
+
+            return sb.ToString();
+        }
     }
 
     class ObjectIntString
@@ -48,6 +63,21 @@ namespace CodingUnderstanding.Generics
 
             return sb.ToString();
         }
+
+        public string DisplayPropertyValues()
+        {
+
+            string carriageReturnLineFeed = "\n\r";
+
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append("Value A = ")
+              .Append(A.ToString()).Append(carriageReturnLineFeed)
+              .Append("Value B = ")
+              .Append(B.ToString()).Append(carriageReturnLineFeed);
+
+            return sb.ToString();
+        }
     }
 
     class ObjectStringFloat
@@ -67,6 +97,21 @@ namespace CodingUnderstanding.Generics
               .Append(A).Append("\n\r")
               .Append("Value B = ")
               .Append(B.ToString()).Append("\n\r");
+
+            return sb.ToString();
+        }
+
+        public string DisplayPropertyValues()
+        {
+
+            string carriageReturnLineFeed = "\n\r";
+
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append("Value A = ")
+              .Append(A.ToString()).Append(carriageReturnLineFeed)
+              .Append("Value B = ")
+              .Append(B.ToString()).Append(carriageReturnLineFeed);
 
             return sb.ToString();
         }

@@ -22,6 +22,18 @@ namespace CodingUnderstanding.Generics
 
             return sb.ToString();
         }
+
+        public string DisplayPropertyValues()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append("Value A = ")
+              .Append(A.ToString()).Append("\n\r")
+              .Append("Value B = ")
+              .Append(B.ToString()).Append("\n\r");
+
+            return sb.ToString();
+        }
     }
 
     class GenericExample

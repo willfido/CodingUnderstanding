@@ -13,8 +13,7 @@ namespace CodingUnderstanding.Generics
 
         public string DisplayValues()
         {
-
-            string carriageReturnLineFeed = "\n\r";
+            var carriageReturnLineFeed = "\n\r";
 
             StringBuilder sb = new StringBuilder();
 
@@ -30,7 +29,7 @@ namespace CodingUnderstanding.Generics
         public string DisplayPropertyValues()
         {
 
-            string carriageReturnLineFeed = "\n\r";
+            var carriageReturnLineFeed = "\n\r";
 
             StringBuilder sb = new StringBuilder();
 
@@ -67,7 +66,7 @@ namespace CodingUnderstanding.Generics
         public string DisplayPropertyValues()
         {
 
-            string carriageReturnLineFeed = "\n\r";
+            var carriageReturnLineFeed = "\n\r";
 
             StringBuilder sb = new StringBuilder();
 
